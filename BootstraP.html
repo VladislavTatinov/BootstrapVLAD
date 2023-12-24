@@ -9,6 +9,21 @@
     top: 80;
     left: 100px;
     }
+
+    .img2 {
+      width: 500px;
+      height: 303px;
+      position:absolute;
+      top:40px;
+      left: 50px;
+
+    }
+    .d-block, .w-100{
+    display: inline-block;
+    width: 50%;
+    height: 400px;    
+}
+
   </style>
   <head>
     <meta charset="utf-8">
@@ -16,84 +31,109 @@
     <style>
   </style>
     <title>GtaVI</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+    <link class="img2" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
   <div>
-    <h1 class="text-secondary-emphasis"> Новости GTA VI </h1>
+    <h1 class="text-light-emphasis"> Новости GTA VI </h1>
+    <!-- <img class="rockstargames-sites-gtaca8f6a169617af3fc7b90e396b382b80" src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d358ca0f4ef1b724361c30dd82547992.png" alt=""> -->
     <br></br>
 
-    <div class="d-flex flex-row mb-3">
-      <div class="p-3 mb-2 bg-primary text-light">Атмосфера</div>
-      <div class = "p-3 mb-2 bg-primary-subtle text-light>Новые игровые механики">Новые игровые механики</div>
-      <div class="p-2 bg-danger-subtle text-light">Графика</div>
-      <div class="p-2 bg-warning text-light">Персонажи</div>
-      <div class="p-2 bg-warning-subtle
-      text-light">Сюжет</div>
-      <div class="p-2 bg-success text-light-">Открытый мир</div>
-    </div>
 
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img  src="f6f068330a.png" class="d-block w-100" alt="...">
+    <p>
+        <a class="btn btn-warning" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Графика</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Персонажи</button>
+        <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#multiСollapseExaple3" aria-expanded="false" aria-controls="multiCollapseExample3">Сюжет</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              Новая часть в серии Grand Theft Auto предложит скачок графики, который превзойдет разрыв, наблюдавшийся между Red Dead Redemption 2 и GTA V. Вдобавок игра предложит улучшенную физику транспорта с более точными деформациями и реалистичными авариями, а любое из повреждений будет влиять на управляемость. Впервые в серии GTA 6 также получит физически моделируемое освещение, а система погоды будет значительно улучшена в сравнении с предыдущей частью и окажет существенное влияние на игровой процесс.
+            </div>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="85c1c5ba2ace41bc9cd2c2533854b72a.jpg" class="d-block w-100" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="cc109629acc9411da7d3278cbcd2bfa4.jpg" class="d-block w-100" alt="...">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Главные герои GTA 6 открылись свету после, наверное, самого масштабного слива в истории современной игровой индустрии — в Сети появились кадры и видео с одним из производственных билдов игры. Так мы узнали, что протагонистами шестой части станут Люсия и Джейсон.
+            </div>
+          </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Предыдущий</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Следующий</span>
-      </button>
-    </div>
+      <div class="sow">
+          <div class="collapse multi-collapse" id="multiCollapseExample3">
+            <div class="card card-body">
+              По информации известного инсайдера Matheusvictorbr, в шестой части Grand Theft Auto можно будет играть за двух главных героев — это будут брат и сестра (двойняшки). Они были разлучены с детства из-за действий картеля, который убил их родителей в 2003 году. Трагическая сцена с родственниками произойдет, предположительно, в прологе игры в Бразилии.
 
-
+Сюжетная одиночная кампания будет происходить в 2020-х годах. В конечном итоге брат встретится с сестрой, но они будут представлять противоборствующие стороны. Брат станет полицейским — агентом по борьбе с наркотиками, а сестра будет работать в картеле, продвигаясь по служебной лестнице, чтобы отомстить за смерть родителей.
+            </div>
+          </div>
+        </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="347207_O.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="85c1c5ba2ace41bc9cd2c2533854b72a.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="cc109629acc9411da7d3278cbcd2bfa4.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
   
+        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+          <a class="navbar-brand" href="#">Масштабы GTA VI впечатляют — в такое мир еще не играл</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading2">Первый</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Выпадающий список</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#scrollspyHeading3">Второй</a></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading4">Третий</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading5">Четвёртый</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-black p-3 rounded-2" tabindex="0">
+          <h4 id="scrollspyHeading1">Когда выйдет GTA 6?</h4>
+          <p>Разработчики планируют выпустить GTA 6 в 2024 году. Об этом сообщает инсайдер Matheusvictorbr.
+
+            Отметим, что ранее Rockstar признала факт разработки GTA 6 4 февраля. Сейчас игра находится в активной фазе создания на ранних стадиях, поэтому точную дату выпуска пока не называют. Планы по выходу новой GTA могут измениться в любой момент.
+            
+            Ранее в Сети утверждали, что первый трейлер GTA 6 должен был выйти 13 мая, но этого не случилось.</p>
+          <h4 id="scrollspyHeading2">Что будет с GTA Online?</h4>
+          <p>Отдельного режима мультиплеера не будет для GTA 6. Вместо этого Rockstar будет развивать существующую GTA Online, которая появилась вместе с GTA 5. В новом онлайне добавят карту города Либерти-Сити и около 20 радиостанций. Одна из них будет называться Carcer Soul FM.</p>
+          <h4 id="scrollspyHeading3">Когда вышла последняя часть GTA?</h4>
+          <p>Последняя часть Grand Theft Auto (GTA 5) вышла в сентябре 2013 года на ПК (Windows) и консолях — PlayStation 3, PlayStation 4, PlayStation 5, Xbox Series, Xbox One и Xbox 360. Сюжет пятой части происходит вокруг трех персонажей-грабителей, которые противоборствуют преступникам и полицейским.
+
+            GTA 5 является одной из самых популярных в своей серии. В общей сложности было продано около 160 миллионов копий игры. Пятая часть считается одной из самых успешных в плане финансово выгодных развлекательных продуктов с доходом более шести миллиардов долларов.</p>
+          <h4 id="scrollspyHeading4">Повышенный реализм и новые механики</h4>
+          <p>По предварительным данным, основные события развернутся в вымышленном городе Carcer City, о прообразе которого пока неизвестно. Это будет своеобразная «пасхалка» — населенный пункт с названием «Карцер-Сити» появлялся в другой популярной игре Rockstar — жутковатом стелс-экшене Manhunt, выпущенном в 2003 году. Кроме того, перипетии сюжета перенесут игроков на Кубу, в Колумбию, а также в Вайс-Сити из игры 2002 года, выполненный по подобию Майами.
+
+Что касается геймплея, то главным отличием от предыдущих частей GTA должны стать значительно усовершенствованные игровые механики и повышенный реализм. Так, не исключено, что огромный виртуальный мир теперь будет состоять из полностью деформируемых и разрушаемых объектов, в том числе зданий. Кроме того, различные погодные и природные явления, будь то ураган или наводнение, смогут в значительной мере влиять на игровой процесс.
+
+Наконец, реализма добавит тот факт, что персонаж теперь будет отправляться на разборки с врагами, имея при себе лишь ограниченный арсенал оружия, как это было, скажем в Red Dead Redemption 2. Как раньше, таскать за пазухой полтора десятка пистолетов, автоматов и гранатометов больше не получится.</p>
+          <h4 id="scrollspyHeading5">Мини-игры и криптовалюта</h4>
+          <p>На реализм должны повлиять и разного рода побочные миссии, развлекательные активности и новые мини-игры, количество которых в новой GTA VI значительно вырастет. Кроме того, Rockstar существенно переработает и усложнит модель развития и управления собственным бизнесом, за счет чего процесс зарабатывания дополнительного капитала станет куда более увлекательным.
+
+            Более того, инсайдеры утверждают, что в GTA VI появится своя криптовалюта, которая станет альтернативой внутриигровым «долларам». По предварительным данным, игрок будет получать «биткоины» при прохождении некоторых миссий от высокопоставленных персонажей, которым необходимо провести оплату с высокой долей анонимности.</p>
+        </div>
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>
